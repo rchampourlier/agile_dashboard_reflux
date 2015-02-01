@@ -1,0 +1,22 @@
+{
+  "name": "agile_dashboard",
+  "version": "0.0.0",
+  "authors": [
+    "Romain Champourlier"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "bootstrap-sass-official": "~3.3.0"
+  }
+}
