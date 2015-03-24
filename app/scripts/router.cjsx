@@ -6,12 +6,19 @@ DefaultRoute = Router.DefaultRoute
 
 Layout = require './components/layout'
 Home = require './components/home'
-Sprints = require './components/sprints'
+SprintsList = require './components/sprints/sprints_list'
+IssuesList = require './components/issues/issues_list'
+WorklogsIndex = require './components/worklogs/index'
+IssuesIndex = require './components/issues/index'
 
 routes = (
 	<Route name="layout" path="/" handler={Layout}>
 		<DefaultRoute handler={Home} />
-    <Route name="sprints" path="/sprints" handler={Sprints} />
+    <Route name="sprints" path="/sprints" handler={SprintsList}>
+      <Route name="sprintIssues" path="/sprints/:sprintName" handler={IssuesList} />
+    </Route>
+    <Route name="worklogs" path="/worklogs" handler={WorklogsIndex} />
+    <Route name="issues" path="/issues" handler={IssuesIndex} />
 	</Route>
 )
 

@@ -65,6 +65,7 @@ gulp.task 'bundle', ->
     .pipe htmlFilter.restore()
     .pipe $.revAll( ignore: [/^\/favicon.ico$/g, '.html'] )
     .pipe $.revReplace()
+    .pipe $.replace(/http:\/\/agile-jira.dev/, 'https://agile-jira.herokuapp.com')
     .pipe gulp.dest('dist')
     .pipe $.size()
 

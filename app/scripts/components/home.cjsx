@@ -6,15 +6,7 @@ Home = React.createClass
 
     return (
       <div className="hero-unit">
-        <h1>Let it go!</h1>
-        <p>You now have</p>
-        <ul>
-            <li>ReactJS Reflux Boilerplate</li>
-            <li>Modernizr</li>
-            <li>CoffeeScript</li>
-            <li>Sass with Compass</li>
-            <li>Jest</li>
-        </ul>
+        <h1>Welcome on Agile Dashboard!</h1>
       </div>
     )
 

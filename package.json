@@ -5,12 +5,14 @@
   "author": "Romain Champourlier",
   "license": "MIT",
   "dependencies": {
+    "lodash": "~3.0.1",
     "react": "~0.12.0",
     "react-router": "~0.11.6",
     "reflux": "~0.2.4",
-    "rest": "~1.3.0",
+    "superagent": "~0.21.0",
     "react-bootstrap": "~0.13.3",
-    "react-router-bootstrap": "~0.8.3"
+    "react-router-bootstrap": "~0.8.3",
+    "griddle-react": "~0.2.0"
   },
   "devDependencies": {
     "browserify": "~7.0.0",
