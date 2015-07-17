@@ -1,10 +1,13 @@
 Reflux     = require 'reflux'
 
 # IssuesFilterActions:
-#   - addCategory(category)
+#   - addFilter
 #
 IssuesFilterActions = Reflux.createActions(
-  'addFilter'
+  [ 'addFilter' ]
 )
+
+IssuesFilterActions.addFilter.listen () ->
+  console.log 'addFilter.listen'
 
 module.exports = IssuesFilterActions

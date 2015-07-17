@@ -60,14 +60,17 @@ IssuesListComponent = React.createClass
                     className="pull-right"
                     type="status"
                     value={issue.status}
-                    onAdd={IssuesFilterActions.addFilter}/>
+                    onAdd={IssuesFilterActions.addFilter} />
                 </div>
                 <div className="details">
                   <IssueClassifier
                     type="category"
                     value={issue.category}
                     onAdd={IssuesFilterActions.addFilter} />
-                  <IssueClassifier type="type" value={issue.type} />
+                  <IssueClassifier
+                    type="type"
+                    value={issue.type}
+                    onAdd={IssuesFilterActions.addFilter} />
                 </div>
               </td></tr>
             }

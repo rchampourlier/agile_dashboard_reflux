@@ -25,7 +25,6 @@ IssueClassifierComponent = React.createClass
     classes.join ' '
 
   handleOnClick: ->
-    console.log @props
     @props.onAdd(@props.type, @props.value)
 
   render: ->

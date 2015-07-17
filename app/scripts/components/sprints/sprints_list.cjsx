@@ -3,7 +3,10 @@ Router       = require 'react-router'
 RouteHandler = Router.RouteHandler
 
 Reflux             = require 'reflux'
+
 SprintsListStore   = require '../../stores/sprints/sprints_list_store'
+IssuesFilterStore  = require '../../stores/issues/issues_filter_store'
+
 SprintsListActions = require '../../actions/sprints/sprints_list_actions'
 
 Griddle        = require 'griddle-react'
@@ -27,6 +30,8 @@ SprintsListComponent = React.createClass
 
   componentDidMount: ->
     this.listenTo SprintsListStore, @onSprintsListChange
+    this.listenTo IssuesFilterStore, ->
+      console.log 'issuesFilterStore'
 
   render: ->
     return (
